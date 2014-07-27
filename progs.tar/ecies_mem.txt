@@ -1,0 +1,529 @@
+--------------------------------------------------------------------------------
+Command:            ./ecies
+Massif arguments:   (none)
+ms_print arguments: massif.out.4814
+--------------------------------------------------------------------------------
+
+
+    KB
+50.22^               #                               .                        
+     |             : #             :                 :                  :    :
+     |             : #          :  :                 :            :   . :    :
+     |             : #          :  :          :      :   :     : ::   : :    :
+     |             :.# .  .    ,:  : :  . .  .:  .:  :   ::    : :: . : :.   :
+     |             ::# : ::    @:  : :: : : :::  ::: : : :: : @: :: : : :: : :
+     |           : ::# : ::: @ @:: :::: ::: :::: ::: :.: :: : @: :: : : :: : :
+     |           : ::# : ::: @ @:: :::: ::: :::: ::: ::: :: : @: :: : : :: : :
+     |           : ::# : ::: @ @:: :::: ::: :::: ::: ::: :: : @: :: : : :: : :
+     |           : ::# : ::: @ @:: :::: ::: :::: ::: ::: :: : @: :: : : :: : :
+     |           : ::# : ::: @ @:: :::: ::: :::: ::: ::: :: : @: :: : : :: : :
+     |           : ::# : ::: @ @:: :::: ::: :::: ::: ::: :: : @: :: : : :: : :
+     |           : ::# : ::: @ @:: :::: ::: :::: ::: ::: :: : @: :: : : :: : :
+     |          :: ::# : ::: @ @:: :::: ::: :::: ::: ::: :: : @: :: : : :: : :
+     |         ::: ::# : ::: @ @:: :::: ::: :::: ::: ::: :: : @: :: : : :: : :
+     |    . , :::: ::# : ::: @ @:: :::: ::: :::: ::: ::: :: : @: :: : : :: : :
+     |   :: @ :::: ::# : ::: @ @:: :::: ::: :::: ::: ::: :: : @: :: : : :: : :
+     |   :: @ :::: ::# : ::: @ @:: :::: ::: :::: ::: ::: :: : @: :: : : :: : :
+     |   :: @ :::: ::# : ::: @ @:: :::: ::: :::: ::: ::: :: : @: :: : : :: : :
+     |   :: @ :::: ::# : ::: @ @:: :::: ::: :::: ::: ::: :: : @: :: : : :: : :
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   669.2
+
+Number of snapshots: 51
+ Detailed snapshots: [4, 11 (peak), 16, 17, 40]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1     18,978,121               32               24             8            0
+  2     33,692,947           11,480           10,146         1,334            0
+  3     45,400,031           11,680           10,298         1,382            0
+  4     63,423,519           12,008           10,574         1,434            0
+88.06% (10,574B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->58.48% (7,022B) 0x4313296: std::vector<unsigned short, std::allocator<unsigned short> >::reserve(unsigned int) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->58.48% (7,022B) 0x4313CE5: CryptoPP::Singleton<std::vector<unsigned short, std::allocator<unsigned short> >, CryptoPP::NewPrimeTable, 0>::Ref() const (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->58.48% (7,022B) 0x430B52B: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/libcrypto++.so.7.0.0)
+|     ->58.48% (7,022B) 0x430B5EB: CryptoPP::SmallDivisorsTest(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|       ->58.48% (7,022B) 0x430ECC7: CryptoPP::IsPrime(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|         ->58.48% (7,022B) 0x4310FE0: CryptoPP::VerifyPrime(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&, unsigned int) (in /usr/lib/libcrypto++.so.7.0.0)
+|           ->58.48% (7,022B) 0x42842C3: CryptoPP::ECP::ValidateParameters(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|             ->58.48% (7,022B) 0x42533C1: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::ValidateGroup(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|               ->58.48% (7,022B) 0x423FD84: CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint>::Validate(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|                 ->58.48% (7,022B) 0x4252968: CryptoPP::DL_PrivateKeyImpl<CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP> >::Validate(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|                   ->58.48% (7,022B) 0x8051E16: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|                     
+->05.73% (688B) 0x4269DFB: CryptoPP::AllocatorWithCleanup<unsigned int, true>::reallocate(unsigned int*, unsigned int, unsigned int, bool) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->05.73% (688B) 0x42EB7EA: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->05.73% (688B) in 53 places, all below massif's threshold (01.00%)
+|     
+->05.66% (680B) in 51 places, all below massif's threshold (01.00%)
+| 
+->04.13% (496B) 0x426A11B: CryptoPP::AllocatorWithCleanup<unsigned int, true>::allocate(unsigned int, void const*) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->02.40% (288B) 0x42EBE58: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | ->02.40% (288B) in 60 places, all below massif's threshold (01.00%)
+| |   
+| ->01.33% (160B) 0x42EDC0A: CryptoPP::MontgomeryRepresentation::MontgomeryRepresentation(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | ->01.33% (160B) 0x4284975: CryptoPP::ECP::ECP(CryptoPP::ECP const&, bool) (in /usr/lib/libcrypto++.so.7.0.0)
+| | | ->01.33% (160B) 0x42462F0: CryptoPP::EcPrecomputation<CryptoPP::ECP>::SetCurve(CryptoPP::ECP const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | |   ->01.33% (160B) 0x42739AD: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::Initialize(CryptoPP::OID const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     ->01.33% (160B) 0x427466F: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::AssignFrom(CryptoPP::NameValuePairs const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     | ->01.33% (160B) 0x8055B01: CryptoPP::DL_PrivateKey<CryptoPP::ECPPoint>::MakePublicKey(CryptoPP::DL_PublicKey<CryptoPP::ECPPoint>&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+| | |     |   ->01.33% (160B) 0x8051F0B: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+| | |     |     
+| | |     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | |     
+| | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.40% (48B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.63% (316B) 0x8058DB4: __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned int, void const*) (in /home/bhavna/Desktop/project/progs 2/ecies)
+| ->02.63% (316B) 0x8058DDE: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned int) (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   ->02.63% (316B) 0x8058E1C: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base(unsigned int, std::allocator<unsigned int> const&) (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   | ->02.63% (316B) 0x805966B: std::vector<unsigned int, std::allocator<unsigned int> >::vector(std::vector<unsigned int, std::allocator<unsigned int> > const&) (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   | | ->02.63% (316B) 0x80596E8: CryptoPP::OID::OID(CryptoPP::OID const&) (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   | |   ->02.63% (316B) in 17 places, all below massif's threshold (01.00%)
+|   | |     
+|   | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   | 
+|   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->02.30% (276B) 0x4245752: CryptoPP::value_ptr<CryptoPP::ECP>::operator=(CryptoPP::value_ptr<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->02.30% (276B) in 3 places, all below massif's threshold (01.00%)
+|   
+->02.13% (256B) 0x4320393: CryptoPP::ByteQueue::ByteQueue(unsigned int) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->02.13% (256B) 0x8057E38: CryptoPP::PKCS8PrivateKey::PKCS8PrivateKey() (in /home/bhavna/Desktop/project/progs 2/ecies)
+| | ->02.13% (256B) 0x80583DD: CryptoPP::DL_KeyImpl<CryptoPP::PKCS8PrivateKey, CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>, CryptoPP::OID>::DL_KeyImpl() (in /home/bhavna/Desktop/project/progs 2/ecies)
+| |   ->02.13% (256B) 0x80585BB: CryptoPP::DL_PrivateKeyImpl<CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP> >::DL_PrivateKeyImpl() (in /home/bhavna/Desktop/project/progs 2/ecies)
+| |     ->02.13% (256B) 0x8058679: CryptoPP::DL_PrivateKey_EC<CryptoPP::ECP>::DL_PrivateKey_EC() (in /home/bhavna/Desktop/project/progs 2/ecies)
+| |       ->02.13% (256B) 0x8051D17: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+| |         
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.00% (240B) 0x43297FE: CryptoPP::Rijndael::Base::UncheckedSetKey(unsigned char const*, unsigned int, CryptoPP::NameValuePairs const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->02.00% (240B) 0x422D5B4: CryptoPP::SimpleKeyingInterface::SetKey(unsigned char const*, unsigned int, CryptoPP::NameValuePairs const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->02.00% (240B) 0x4325419: CryptoPP::RandomPool::GenerateIntoBufferedTransformation(CryptoPP::BufferedTransformation&, std::string const&, unsigned long long) (in /usr/lib/libcrypto++.so.7.0.0)
+|     ->02.00% (240B) 0x422CD71: CryptoPP::RandomNumberGenerator::GenerateBlock(unsigned char*, unsigned int) (in /usr/lib/libcrypto++.so.7.0.0)
+|       ->02.00% (240B) 0x42EF677: CryptoPP::Integer::Randomize(CryptoPP::RandomNumberGenerator&, unsigned int) (in /usr/lib/libcrypto++.so.7.0.0)
+|         ->02.00% (240B) 0x42F09A9: CryptoPP::Integer::Randomize(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|           ->02.00% (240B) 0x42F2C0F: CryptoPP::Integer::GenerateRandomNoThrow(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|             ->02.00% (240B) 0x42F3C65: CryptoPP::Integer::Randomize(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer::RandomNumberType, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|               ->02.00% (240B) 0x42F4232: CryptoPP::Integer::Integer(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer::RandomNumberType, CryptoPP::Integer const&, CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|                 ->02.00% (240B) 0x425287E: CryptoPP::DL_PrivateKeyImpl<CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP> >::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|                   ->02.00% (240B) 0x423ECD3: CryptoPP::DL_PrivateKey_EC<CryptoPP::ECP>::Initialize(CryptoPP::RandomNumberGenerator&, CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|                     ->02.00% (240B) 0x8051D8F: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|                       
+->01.33% (160B) 0x42F691B: CryptoPP::MontgomeryRepresentation::Clone() const (in /usr/lib/libcrypto++.so.7.0.0)
+| ->01.33% (160B) 0x42848BE: CryptoPP::ECP::ECP(CryptoPP::ECP const&, bool) (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->01.33% (160B) 0x424576D: CryptoPP::value_ptr<CryptoPP::ECP>::operator=(CryptoPP::value_ptr<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|     ->01.33% (160B) 0x42653D0: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::operator=(CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|       ->01.33% (160B) 0x4265897: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::GetVoidValue(char const*, std::type_info const&, void*) const (in /usr/lib/libcrypto++.so.7.0.0)
+|         ->01.33% (160B) 0x4252802: CryptoPP::DL_PrivateKeyImpl<CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP> >::GenerateRandom(CryptoPP::RandomNumberGenerator&, CryptoPP::NameValuePairs const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|           ->01.33% (160B) 0x423ECD3: CryptoPP::DL_PrivateKey_EC<CryptoPP::ECP>::Initialize(CryptoPP::RandomNumberGenerator&, CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|             ->01.33% (160B) 0x8051D8F: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|               
+->01.33% (160B) 0x42ECBA3: CryptoPP::Integer::Integer(unsigned int, unsigned int) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->01.33% (160B) in 9 places, all below massif's threshold (01.00%)
+|   
+->01.20% (144B) 0x42F6554: CryptoPP::ModularArithmetic::Clone() const (in /usr/lib/libcrypto++.so.7.0.0)
+| ->01.20% (144B) 0x42848BE: CryptoPP::ECP::ECP(CryptoPP::ECP const&, bool) (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->01.20% (144B) 0x424576D: CryptoPP::value_ptr<CryptoPP::ECP>::operator=(CryptoPP::value_ptr<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|   | ->01.20% (144B) in 2 places, all below massif's threshold (01.00%)
+|   |   
+|   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->01.13% (136B) 0x42ED637: CryptoPP::Integer::Integer() (in /usr/lib/libcrypto++.so.7.0.0)
+  ->01.13% (136B) in 53 places, all below massif's threshold (01.00%)
+    
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  5     79,428,406           13,616           11,626         1,990            0
+  6     91,557,336           16,280           13,502         2,778            0
+  7    106,238,588           19,120           15,598         3,522            0
+  8    116,750,909           37,008           33,513         3,495            0
+  9    131,832,919           49,168           43,242         5,926            0
+ 10    144,708,003           39,976           35,849         4,127            0
+ 11    152,997,914           51,424           44,546         6,878            0
+86.62% (44,546B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.86% (16,384B) 0x44A88E1: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/libstdc++.so.6.0.10)
+| ->31.86% (16,384B) 0x44AA0A0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|   ->31.86% (16,384B) 0x44AA181: std::basic_fstream<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|     ->15.93% (8,192B) 0x8052045: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|     | 
+|     ->15.93% (8,192B) 0x8052073: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|       
+->14.72% (7,568B) 0x426A11B: CryptoPP::AllocatorWithCleanup<unsigned int, true>::allocate(unsigned int, void const*) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->13.88% (7,136B) 0x42EBE58: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | ->04.98% (2,560B) in 66 places, all below massif's threshold (01.00%)
+| | | 
+| | ->02.99% (1,536B) 0x428831E: CryptoPP::ProjectivePoint* std::__uninitialized_move_a<CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, std::allocator<CryptoPP::ProjectivePoint> >(CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, std::allocator<CryptoPP::ProjectivePoint>&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | | ->02.99% (1,536B) 0x4288D23: std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> >::_M_insert_aux(__gnu_cxx::__normal_iterator<CryptoPP::ProjectivePoint*, std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> > >, CryptoPP::ProjectivePoint const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | |   ->02.99% (1,536B) 0x4286740: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     ->02.99% (1,536B) 0x42857D4: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     | ->02.99% (1,536B) 0x423E3BE: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::SimultaneousExponentiate(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     |   ->02.99% (1,536B) 0x805BB86: CryptoPP::DL_KeyAgreementAlgorithm_DH<CryptoPP::ECPPoint, CryptoPP::EnumToType<CryptoPP::CofactorMultiplicationOption, 0> >::AgreeWithStaticPrivateKey(CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint> const&, CryptoPP::ECPPoint const&, bool, CryptoPP::Integer const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+| | |     |     ->02.99% (1,536B) 0x80590C4: CryptoPP::DL_DecryptorBase<CryptoPP::ECPPoint>::Decrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned int, unsigned char*, CryptoPP::NameValuePairs const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+| | |     |       ->02.99% (1,536B) 0x805242B: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+| | |     |         
+| | |     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | |     
+| | ->02.99% (1,536B) 0x4288336: CryptoPP::ProjectivePoint* std::__uninitialized_move_a<CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, std::allocator<CryptoPP::ProjectivePoint> >(CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, std::allocator<CryptoPP::ProjectivePoint>&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | | ->02.99% (1,536B) 0x4288D23: std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> >::_M_insert_aux(__gnu_cxx::__normal_iterator<CryptoPP::ProjectivePoint*, std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> > >, CryptoPP::ProjectivePoint const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | |   ->02.99% (1,536B) 0x4286740: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     ->02.99% (1,536B) 0x42857D4: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     | ->02.99% (1,536B) 0x423E3BE: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::SimultaneousExponentiate(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     |   ->02.99% (1,536B) 0x805BB86: CryptoPP::DL_KeyAgreementAlgorithm_DH<CryptoPP::ECPPoint, CryptoPP::EnumToType<CryptoPP::CofactorMultiplicationOption, 0> >::AgreeWithStaticPrivateKey(CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint> const&, CryptoPP::ECPPoint const&, bool, CryptoPP::Integer const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+| | |     |     ->02.99% (1,536B) 0x80590C4: CryptoPP::DL_DecryptorBase<CryptoPP::ECPPoint>::Decrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned int, unsigned char*, CryptoPP::NameValuePairs const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+| | |     |       ->02.99% (1,536B) 0x805242B: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+| | |     |         
+| | |     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | |     
+| | ->02.92% (1,504B) 0x4288348: CryptoPP::ProjectivePoint* std::__uninitialized_move_a<CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, std::allocator<CryptoPP::ProjectivePoint> >(CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, std::allocator<CryptoPP::ProjectivePoint>&) (in /usr/lib/libcrypto++.so.7.0.0)
+| |   ->02.92% (1,504B) 0x4288D23: std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> >::_M_insert_aux(__gnu_cxx::__normal_iterator<CryptoPP::ProjectivePoint*, std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> > >, CryptoPP::ProjectivePoint const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| |     ->02.92% (1,504B) 0x4286740: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+| |       ->02.92% (1,504B) 0x42857D4: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+| |       | ->02.92% (1,504B) 0x423E3BE: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::SimultaneousExponentiate(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+| |       |   ->02.92% (1,504B) 0x805BB86: CryptoPP::DL_KeyAgreementAlgorithm_DH<CryptoPP::ECPPoint, CryptoPP::EnumToType<CryptoPP::CofactorMultiplicationOption, 0> >::AgreeWithStaticPrivateKey(CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint> const&, CryptoPP::ECPPoint const&, bool, CryptoPP::Integer const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+| |       |     ->02.92% (1,504B) 0x80590C4: CryptoPP::DL_DecryptorBase<CryptoPP::ECPPoint>::Decrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned int, unsigned char*, CryptoPP::NameValuePairs const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+| |       |       ->02.92% (1,504B) 0x805242B: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+| |       |         
+| |       ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| |       
+| ->00.84% (432B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->13.66% (7,022B) 0x4313296: std::vector<unsigned short, std::allocator<unsigned short> >::reserve(unsigned int) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->13.66% (7,022B) 0x4313CE5: CryptoPP::Singleton<std::vector<unsigned short, std::allocator<unsigned short> >, CryptoPP::NewPrimeTable, 0>::Ref() const (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->13.66% (7,022B) 0x430B52B: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/libcrypto++.so.7.0.0)
+|     ->13.66% (7,022B) 0x430B5EB: CryptoPP::SmallDivisorsTest(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|       ->13.66% (7,022B) 0x430ECC7: CryptoPP::IsPrime(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|         ->13.66% (7,022B) 0x4310FE0: CryptoPP::VerifyPrime(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&, unsigned int) (in /usr/lib/libcrypto++.so.7.0.0)
+|           ->13.66% (7,022B) 0x42842C3: CryptoPP::ECP::ValidateParameters(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|             ->13.66% (7,022B) 0x42533C1: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::ValidateGroup(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|               ->13.66% (7,022B) 0x423FD84: CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint>::Validate(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|                 ->13.66% (7,022B) 0x4252968: CryptoPP::DL_PrivateKeyImpl<CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP> >::Validate(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|                   ->13.66% (7,022B) 0x8051E16: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|                     
+->11.20% (5,760B) 0x4288CC6: std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> >::_M_insert_aux(__gnu_cxx::__normal_iterator<CryptoPP::ProjectivePoint*, std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> > >, CryptoPP::ProjectivePoint const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->11.20% (5,760B) 0x4286740: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->11.20% (5,760B) 0x42857D4: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|   | ->11.20% (5,760B) 0x423E3BE: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::SimultaneousExponentiate(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|   |   ->11.20% (5,760B) 0x805BB86: CryptoPP::DL_KeyAgreementAlgorithm_DH<CryptoPP::ECPPoint, CryptoPP::EnumToType<CryptoPP::CofactorMultiplicationOption, 0> >::AgreeWithStaticPrivateKey(CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint> const&, CryptoPP::ECPPoint const&, bool, CryptoPP::Integer const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   |     ->11.20% (5,760B) 0x80590C4: CryptoPP::DL_DecryptorBase<CryptoPP::ECPPoint>::Decrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned int, unsigned char*, CryptoPP::NameValuePairs const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   |       ->11.20% (5,760B) 0x805242B: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   |         
+|   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->07.79% (4,004B) in 68 places, all below massif's threshold (01.00%)
+| 
+->03.42% (1,760B) 0x4269DFB: CryptoPP::AllocatorWithCleanup<unsigned int, true>::reallocate(unsigned int*, unsigned int, unsigned int, bool) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->03.42% (1,760B) 0x42EB7EA: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->03.42% (1,760B) in 58 places, all below massif's threshold (01.00%)
+|     
+->01.37% (704B) 0x45CCACD: (within /lib/tls/i686/cmov/libc-2.9.so)
+| ->01.37% (704B) 0x45CF51A: fopen64 (in /lib/tls/i686/cmov/libc-2.9.so)
+|   ->01.37% (704B) 0x4501605: std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int) (in /usr/lib/libstdc++.so.6.0.10)
+|     ->01.37% (704B) 0x44AA08C: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|       ->01.37% (704B) 0x44AA181: std::basic_fstream<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|         ->01.37% (704B) in 2 places, all below massif's threshold (01.00%)
+|           
+->01.36% (700B) 0x8058DB4: __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned int, void const*) (in /home/bhavna/Desktop/project/progs 2/ecies)
+| ->01.36% (700B) 0x8058DDE: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned int) (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   ->01.36% (700B) in 2 places, all below massif's threshold (01.00%)
+|     
+->01.25% (644B) 0x4245752: CryptoPP::value_ptr<CryptoPP::ECP>::operator=(CryptoPP::value_ptr<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+  ->01.25% (644B) in 3 places, all below massif's threshold (01.00%)
+    
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 12    171,980,549           40,368           36,113         4,255            0
+ 13    188,928,962           39,376           35,481         3,895            0
+ 14    197,087,386           39,944           35,769         4,175            0
+ 15    213,397,050           37,136           33,625         3,511            0
+ 16    227,677,294           36,672           33,234         3,438            0
+90.62% (33,234B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->44.68% (16,384B) 0x44A88E1: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/libstdc++.so.6.0.10)
+| ->44.68% (16,384B) 0x44AA0A0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|   ->44.68% (16,384B) 0x44AA181: std::basic_fstream<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|     ->22.34% (8,192B) 0x8052045: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|     | 
+|     ->22.34% (8,192B) 0x8052073: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|       
+->19.15% (7,022B) 0x4313296: std::vector<unsigned short, std::allocator<unsigned short> >::reserve(unsigned int) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->19.15% (7,022B) 0x4313CE5: CryptoPP::Singleton<std::vector<unsigned short, std::allocator<unsigned short> >, CryptoPP::NewPrimeTable, 0>::Ref() const (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->19.15% (7,022B) 0x430B52B: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/libcrypto++.so.7.0.0)
+|     ->19.15% (7,022B) 0x430B5EB: CryptoPP::SmallDivisorsTest(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|       ->19.15% (7,022B) 0x430ECC7: CryptoPP::IsPrime(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|         ->19.15% (7,022B) 0x4310FE0: CryptoPP::VerifyPrime(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&, unsigned int) (in /usr/lib/libcrypto++.so.7.0.0)
+|           ->19.15% (7,022B) 0x42842C3: CryptoPP::ECP::ValidateParameters(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|             ->19.15% (7,022B) 0x42533C1: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::ValidateGroup(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|               ->19.15% (7,022B) 0x423FD84: CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint>::Validate(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|                 ->19.15% (7,022B) 0x4252968: CryptoPP::DL_PrivateKeyImpl<CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP> >::Validate(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|                   ->19.15% (7,022B) 0x8051E16: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|                     
+->09.61% (3,524B) in 67 places, all below massif's threshold (01.00%)
+| 
+->05.06% (1,856B) 0x426A11B: CryptoPP::AllocatorWithCleanup<unsigned int, true>::allocate(unsigned int, void const*) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->03.88% (1,424B) 0x42EBE58: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | ->03.88% (1,424B) in 69 places, all below massif's threshold (01.00%)
+| |   
+| ->01.18% (432B) in 5 places, all below massif's threshold (01.00%)
+|   
+->04.80% (1,760B) 0x4269DFB: CryptoPP::AllocatorWithCleanup<unsigned int, true>::reallocate(unsigned int*, unsigned int, unsigned int, bool) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->04.80% (1,760B) 0x42EB7EA: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->04.80% (1,760B) in 58 places, all below massif's threshold (01.00%)
+|     
+->01.92% (704B) 0x45CCACD: (within /lib/tls/i686/cmov/libc-2.9.so)
+| ->01.92% (704B) 0x45CF51A: fopen64 (in /lib/tls/i686/cmov/libc-2.9.so)
+|   ->01.92% (704B) 0x4501605: std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int) (in /usr/lib/libstdc++.so.6.0.10)
+|     ->01.92% (704B) 0x44AA08C: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|       ->01.92% (704B) 0x44AA181: std::basic_fstream<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|         ->01.92% (704B) in 2 places, all below massif's threshold (01.00%)
+|           
+->01.76% (644B) 0x4245752: CryptoPP::value_ptr<CryptoPP::ECP>::operator=(CryptoPP::value_ptr<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->01.76% (644B) in 3 places, all below massif's threshold (01.00%)
+|   
+->01.31% (480B) 0x42F691B: CryptoPP::MontgomeryRepresentation::Clone() const (in /usr/lib/libcrypto++.so.7.0.0)
+| ->01.31% (480B) 0x42848BE: CryptoPP::ECP::ECP(CryptoPP::ECP const&, bool) (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->01.31% (480B) 0x424576D: CryptoPP::value_ptr<CryptoPP::ECP>::operator=(CryptoPP::value_ptr<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|     ->01.31% (480B) 0x42653D0: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::operator=(CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|       ->01.31% (480B) in 3 places, all below massif's threshold (01.00%)
+|         
+->01.31% (480B) 0x4288CC6: std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> >::_M_insert_aux(__gnu_cxx::__normal_iterator<CryptoPP::ProjectivePoint*, std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> > >, CryptoPP::ProjectivePoint const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->01.31% (480B) 0x4286740: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->01.31% (480B) 0x42857D4: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|   | ->01.31% (480B) 0x423E3BE: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::SimultaneousExponentiate(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|   |   ->01.31% (480B) 0x805BB86: CryptoPP::DL_KeyAgreementAlgorithm_DH<CryptoPP::ECPPoint, CryptoPP::EnumToType<CryptoPP::CofactorMultiplicationOption, 0> >::AgreeWithStaticPrivateKey(CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint> const&, CryptoPP::ECPPoint const&, bool, CryptoPP::Integer const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   |     ->01.31% (480B) 0x80590C4: CryptoPP::DL_DecryptorBase<CryptoPP::ECPPoint>::Decrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned int, unsigned char*, CryptoPP::NameValuePairs const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   |       ->01.31% (480B) 0x805242B: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   |         
+|   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->01.04% (380B) 0x8058DB4: __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned int, void const*) (in /home/bhavna/Desktop/project/progs 2/ecies)
+  ->01.04% (380B) 0x8058DDE: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned int) (in /home/bhavna/Desktop/project/progs 2/ecies)
+    ->01.04% (380B) in 2 places, all below massif's threshold (01.00%)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 17    248,207,463           40,056           36,073         3,983            0
+90.06% (36,073B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->40.90% (16,384B) 0x44A88E1: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/libstdc++.so.6.0.10)
+| ->40.90% (16,384B) 0x44AA0A0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|   ->40.90% (16,384B) 0x44AA181: std::basic_fstream<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|     ->20.45% (8,192B) 0x8052045: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|     | 
+|     ->20.45% (8,192B) 0x8052073: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|       
+->17.53% (7,022B) 0x4313296: std::vector<unsigned short, std::allocator<unsigned short> >::reserve(unsigned int) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->17.53% (7,022B) 0x4313CE5: CryptoPP::Singleton<std::vector<unsigned short, std::allocator<unsigned short> >, CryptoPP::NewPrimeTable, 0>::Ref() const (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->17.53% (7,022B) 0x430B52B: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/libcrypto++.so.7.0.0)
+|     ->17.53% (7,022B) 0x430B5EB: CryptoPP::SmallDivisorsTest(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|       ->17.53% (7,022B) 0x430ECC7: CryptoPP::IsPrime(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|         ->17.53% (7,022B) 0x4310FE0: CryptoPP::VerifyPrime(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&, unsigned int) (in /usr/lib/libcrypto++.so.7.0.0)
+|           ->17.53% (7,022B) 0x42842C3: CryptoPP::ECP::ValidateParameters(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|             ->17.53% (7,022B) 0x42533C1: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::ValidateGroup(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|               ->17.53% (7,022B) 0x423FD84: CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint>::Validate(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|                 ->17.53% (7,022B) 0x4252968: CryptoPP::DL_PrivateKeyImpl<CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP> >::Validate(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|                   ->17.53% (7,022B) 0x8051E16: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|                     
+->07.86% (3,147B) in 67 places, all below massif's threshold (01.00%)
+| 
+->07.19% (2,880B) 0x4288CC6: std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> >::_M_insert_aux(__gnu_cxx::__normal_iterator<CryptoPP::ProjectivePoint*, std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> > >, CryptoPP::ProjectivePoint const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->07.19% (2,880B) 0x4286740: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->07.19% (2,880B) 0x4287033: CryptoPP::ECP::ScalarMultiply(CryptoPP::ECPPoint const&, CryptoPP::Integer const&) const (in /usr/lib/libcrypto++.so.7.0.0)
+|   | ->07.19% (2,880B) 0x427C2A3: CryptoPP::ECPPoint CryptoPP::GeneralCascadeMultiplication<CryptoPP::ECPPoint, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > > >(CryptoPP::AbstractGroup<CryptoPP::ECPPoint> const&, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >) (in /usr/lib/libcrypto++.so.7.0.0)
+|   |   ->07.19% (2,880B) 0x427C54C: CryptoPP::DL_FixedBasePrecomputationImpl<CryptoPP::ECPPoint>::Exponentiate(CryptoPP::DL_GroupPrecomputation<CryptoPP::ECPPoint> const&, CryptoPP::Integer const&) const (in /usr/lib/libcrypto++.so.7.0.0)
+|   |     ->07.19% (2,880B) 0x805B52A: CryptoPP::DL_KeyAgreementAlgorithm_DH<CryptoPP::ECPPoint, CryptoPP::EnumToType<CryptoPP::CofactorMultiplicationOption, 0> >::AgreeWithEphemeralPrivateKey(CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint> const&, CryptoPP::DL_FixedBasePrecomputation<CryptoPP::ECPPoint> const&, CryptoPP::Integer const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   |     | ->07.19% (2,880B) 0x805C083: CryptoPP::DL_EncryptorBase<CryptoPP::ECPPoint>::Encrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned int, unsigned char*, CryptoPP::NameValuePairs const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   |     |   ->07.19% (2,880B) 0x805230F: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   |     |     
+|   |     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->06.71% (2,688B) 0x426A11B: CryptoPP::AllocatorWithCleanup<unsigned int, true>::allocate(unsigned int, void const*) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->06.11% (2,448B) 0x42EBE58: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | ->06.11% (2,448B) in 69 places, all below massif's threshold (01.00%)
+| |   
+| ->00.60% (240B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.19% (1,680B) 0x4269DFB: CryptoPP::AllocatorWithCleanup<unsigned int, true>::reallocate(unsigned int*, unsigned int, unsigned int, bool) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->04.19% (1,680B) 0x42EB7EA: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->04.19% (1,680B) in 58 places, all below massif's threshold (01.00%)
+|     
+->01.76% (704B) 0x45CCACD: (within /lib/tls/i686/cmov/libc-2.9.so)
+| ->01.76% (704B) 0x45CF51A: fopen64 (in /lib/tls/i686/cmov/libc-2.9.so)
+|   ->01.76% (704B) 0x4501605: std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int) (in /usr/lib/libstdc++.so.6.0.10)
+|     ->01.76% (704B) 0x44AA08C: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|       ->01.76% (704B) 0x44AA181: std::basic_fstream<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|         ->01.76% (704B) in 2 places, all below massif's threshold (01.00%)
+|           
+->01.61% (644B) 0x4245752: CryptoPP::value_ptr<CryptoPP::ECP>::operator=(CryptoPP::value_ptr<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->01.61% (644B) in 3 places, all below massif's threshold (01.00%)
+|   
+->01.20% (480B) 0x42F691B: CryptoPP::MontgomeryRepresentation::Clone() const (in /usr/lib/libcrypto++.so.7.0.0)
+| ->01.20% (480B) 0x42848BE: CryptoPP::ECP::ECP(CryptoPP::ECP const&, bool) (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->01.20% (480B) 0x424576D: CryptoPP::value_ptr<CryptoPP::ECP>::operator=(CryptoPP::value_ptr<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|     ->01.20% (480B) 0x42653D0: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::operator=(CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|       ->01.20% (480B) in 3 places, all below massif's threshold (01.00%)
+|         
+->01.11% (444B) 0x8058DB4: __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned int, void const*) (in /home/bhavna/Desktop/project/progs 2/ecies)
+  ->01.11% (444B) 0x8058DDE: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned int) (in /home/bhavna/Desktop/project/progs 2/ecies)
+    ->01.11% (444B) in 2 places, all below massif's threshold (01.00%)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 18    258,261,770           47,168           41,698         5,470            0
+ 19    272,486,045           37,160           33,625         3,535            0
+ 20    286,668,578           49,176           43,242         5,934            0
+ 21    297,822,947           36,216           32,777         3,439            0
+ 22    308,184,614           41,904           37,298         4,606            0
+ 23    318,572,579           39,648           35,657         3,991            0
+ 24    332,290,960           40,176           36,114         4,062            0
+ 25    342,527,926           37,176           33,609         3,567            0
+ 26    353,086,306           40,456           36,017         4,439            0
+ 27    370,404,201           39,520           35,577         3,943            0
+ 28    384,007,880           40,904           36,594         4,310            0
+ 29    397,832,413           44,088           39,041         5,047            0
+ 30    408,058,047           37,008           33,458         3,550            0
+ 31    421,685,467           40,072           35,989         4,083            0
+ 32    435,424,117           41,200           36,786         4,414            0
+ 33    445,818,495           39,736           35,993         3,743            0
+ 34    462,844,720           50,208           44,114         6,094            0
+ 35    476,996,220           34,976           31,829         3,147            0
+ 36    486,226,447           38,728           34,802         3,926            0
+ 37    499,963,857           44,088           39,041         5,047            0
+ 38    513,824,335           41,616           37,106         4,510            0
+ 39    532,289,377           39,800           35,657         4,143            0
+ 40    550,681,494           39,648           35,657         3,991            0
+89.93% (35,657B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->41.32% (16,384B) 0x44A88E1: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/libstdc++.so.6.0.10)
+| ->41.32% (16,384B) 0x44AA0A0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|   ->41.32% (16,384B) 0x44AA181: std::basic_fstream<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|     ->20.66% (8,192B) 0x8052045: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|     | 
+|     ->20.66% (8,192B) 0x8052073: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|       
+->17.71% (7,022B) 0x4313296: std::vector<unsigned short, std::allocator<unsigned short> >::reserve(unsigned int) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->17.71% (7,022B) 0x4313CE5: CryptoPP::Singleton<std::vector<unsigned short, std::allocator<unsigned short> >, CryptoPP::NewPrimeTable, 0>::Ref() const (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->17.71% (7,022B) 0x430B52B: CryptoPP::GetPrimeTable(unsigned int&) (in /usr/lib/libcrypto++.so.7.0.0)
+|     ->17.71% (7,022B) 0x430B5EB: CryptoPP::SmallDivisorsTest(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|       ->17.71% (7,022B) 0x430ECC7: CryptoPP::IsPrime(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|         ->17.71% (7,022B) 0x4310FE0: CryptoPP::VerifyPrime(CryptoPP::RandomNumberGenerator&, CryptoPP::Integer const&, unsigned int) (in /usr/lib/libcrypto++.so.7.0.0)
+|           ->17.71% (7,022B) 0x42842C3: CryptoPP::ECP::ValidateParameters(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|             ->17.71% (7,022B) 0x42533C1: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::ValidateGroup(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|               ->17.71% (7,022B) 0x423FD84: CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint>::Validate(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|                 ->17.71% (7,022B) 0x4252968: CryptoPP::DL_PrivateKeyImpl<CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP> >::Validate(CryptoPP::RandomNumberGenerator&, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|                   ->17.71% (7,022B) 0x8051E16: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|                     
+->07.94% (3,147B) in 67 places, all below massif's threshold (01.00%)
+| 
+->07.83% (3,104B) 0x426A11B: CryptoPP::AllocatorWithCleanup<unsigned int, true>::allocate(unsigned int, void const*) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->07.22% (2,864B) 0x42EBE58: CryptoPP::Integer::Integer(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | ->03.39% (1,344B) in 66 places, all below massif's threshold (01.00%)
+| | | 
+| | ->01.29% (512B) 0x428831E: CryptoPP::ProjectivePoint* std::__uninitialized_move_a<CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, std::allocator<CryptoPP::ProjectivePoint> >(CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, std::allocator<CryptoPP::ProjectivePoint>&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | | ->01.29% (512B) 0x4288D23: std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> >::_M_insert_aux(__gnu_cxx::__normal_iterator<CryptoPP::ProjectivePoint*, std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> > >, CryptoPP::ProjectivePoint const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | |   ->01.29% (512B) 0x4286740: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     ->01.29% (512B) 0x4287033: CryptoPP::ECP::ScalarMultiply(CryptoPP::ECPPoint const&, CryptoPP::Integer const&) const (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     | ->01.29% (512B) 0x427C2A3: CryptoPP::ECPPoint CryptoPP::GeneralCascadeMultiplication<CryptoPP::ECPPoint, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > > >(CryptoPP::AbstractGroup<CryptoPP::ECPPoint> const&, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >) (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     |   ->01.29% (512B) 0x427C54C: CryptoPP::DL_FixedBasePrecomputationImpl<CryptoPP::ECPPoint>::Exponentiate(CryptoPP::DL_GroupPrecomputation<CryptoPP::ECPPoint> const&, CryptoPP::Integer const&) const (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     |     ->01.29% (512B) 0x424037B: CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint>::ExponentiateBase(CryptoPP::Integer const&) const (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     |     | ->01.29% (512B) 0x805BFEC: CryptoPP::DL_EncryptorBase<CryptoPP::ECPPoint>::Encrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned int, unsigned char*, CryptoPP::NameValuePairs const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+| | |     |     | | ->01.29% (512B) 0x805230F: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+| | |     |     | |   
+| | |     |     | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | |     |     | 
+| | |     |     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | |     |     
+| | |     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | |     
+| | ->01.29% (512B) 0x4288336: CryptoPP::ProjectivePoint* std::__uninitialized_move_a<CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, std::allocator<CryptoPP::ProjectivePoint> >(CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, std::allocator<CryptoPP::ProjectivePoint>&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | | ->01.29% (512B) 0x4288D23: std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> >::_M_insert_aux(__gnu_cxx::__normal_iterator<CryptoPP::ProjectivePoint*, std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> > >, CryptoPP::ProjectivePoint const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| | |   ->01.29% (512B) 0x4286740: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     ->01.29% (512B) 0x4287033: CryptoPP::ECP::ScalarMultiply(CryptoPP::ECPPoint const&, CryptoPP::Integer const&) const (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     | ->01.29% (512B) 0x427C2A3: CryptoPP::ECPPoint CryptoPP::GeneralCascadeMultiplication<CryptoPP::ECPPoint, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > > >(CryptoPP::AbstractGroup<CryptoPP::ECPPoint> const&, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >) (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     |   ->01.29% (512B) 0x427C54C: CryptoPP::DL_FixedBasePrecomputationImpl<CryptoPP::ECPPoint>::Exponentiate(CryptoPP::DL_GroupPrecomputation<CryptoPP::ECPPoint> const&, CryptoPP::Integer const&) const (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     |     ->01.29% (512B) 0x424037B: CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint>::ExponentiateBase(CryptoPP::Integer const&) const (in /usr/lib/libcrypto++.so.7.0.0)
+| | |     |     | ->01.29% (512B) 0x805BFEC: CryptoPP::DL_EncryptorBase<CryptoPP::ECPPoint>::Encrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned int, unsigned char*, CryptoPP::NameValuePairs const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+| | |     |     | | ->01.29% (512B) 0x805230F: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+| | |     |     | |   
+| | |     |     | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | |     |     | 
+| | |     |     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | |     |     
+| | |     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | |     
+| | ->01.25% (496B) 0x4288348: CryptoPP::ProjectivePoint* std::__uninitialized_move_a<CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, std::allocator<CryptoPP::ProjectivePoint> >(CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, CryptoPP::ProjectivePoint*, std::allocator<CryptoPP::ProjectivePoint>&) (in /usr/lib/libcrypto++.so.7.0.0)
+| |   ->01.25% (496B) 0x4288D23: std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> >::_M_insert_aux(__gnu_cxx::__normal_iterator<CryptoPP::ProjectivePoint*, std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> > >, CryptoPP::ProjectivePoint const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| |     ->01.25% (496B) 0x4286740: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+| |       ->01.25% (496B) 0x4287033: CryptoPP::ECP::ScalarMultiply(CryptoPP::ECPPoint const&, CryptoPP::Integer const&) const (in /usr/lib/libcrypto++.so.7.0.0)
+| |       | ->01.25% (496B) 0x427C2A3: CryptoPP::ECPPoint CryptoPP::GeneralCascadeMultiplication<CryptoPP::ECPPoint, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > > >(CryptoPP::AbstractGroup<CryptoPP::ECPPoint> const&, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >) (in /usr/lib/libcrypto++.so.7.0.0)
+| |       |   ->01.25% (496B) 0x427C54C: CryptoPP::DL_FixedBasePrecomputationImpl<CryptoPP::ECPPoint>::Exponentiate(CryptoPP::DL_GroupPrecomputation<CryptoPP::ECPPoint> const&, CryptoPP::Integer const&) const (in /usr/lib/libcrypto++.so.7.0.0)
+| |       |     ->01.25% (496B) 0x424037B: CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint>::ExponentiateBase(CryptoPP::Integer const&) const (in /usr/lib/libcrypto++.so.7.0.0)
+| |       |     | ->01.25% (496B) 0x805BFEC: CryptoPP::DL_EncryptorBase<CryptoPP::ECPPoint>::Encrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned int, unsigned char*, CryptoPP::NameValuePairs const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+| |       |     | | ->01.25% (496B) 0x805230F: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+| |       |     | |   
+| |       |     | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| |       |     | 
+| |       |     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| |       |     
+| |       ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| |       
+| ->00.61% (240B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.84% (1,920B) 0x4288CC6: std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> >::_M_insert_aux(__gnu_cxx::__normal_iterator<CryptoPP::ProjectivePoint*, std::vector<CryptoPP::ProjectivePoint, std::allocator<CryptoPP::ProjectivePoint> > >, CryptoPP::ProjectivePoint const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->04.84% (1,920B) 0x4286740: CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->04.84% (1,920B) 0x4287033: CryptoPP::ECP::ScalarMultiply(CryptoPP::ECPPoint const&, CryptoPP::Integer const&) const (in /usr/lib/libcrypto++.so.7.0.0)
+|   | ->04.84% (1,920B) 0x427C2A3: CryptoPP::ECPPoint CryptoPP::GeneralCascadeMultiplication<CryptoPP::ECPPoint, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > > >(CryptoPP::AbstractGroup<CryptoPP::ECPPoint> const&, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >) (in /usr/lib/libcrypto++.so.7.0.0)
+|   |   ->04.84% (1,920B) 0x427C54C: CryptoPP::DL_FixedBasePrecomputationImpl<CryptoPP::ECPPoint>::Exponentiate(CryptoPP::DL_GroupPrecomputation<CryptoPP::ECPPoint> const&, CryptoPP::Integer const&) const (in /usr/lib/libcrypto++.so.7.0.0)
+|   |     ->04.84% (1,920B) 0x424037B: CryptoPP::DL_GroupParameters<CryptoPP::ECPPoint>::ExponentiateBase(CryptoPP::Integer const&) const (in /usr/lib/libcrypto++.so.7.0.0)
+|   |     | ->04.84% (1,920B) 0x805BFEC: CryptoPP::DL_EncryptorBase<CryptoPP::ECPPoint>::Encrypt(CryptoPP::RandomNumberGenerator&, unsigned char const*, unsigned int, unsigned char*, CryptoPP::NameValuePairs const&) const (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   |     | | ->04.84% (1,920B) 0x805230F: main (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   |     | |   
+|   |     | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     | 
+|   |     ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->04.24% (1,680B) 0x4269DFB: CryptoPP::AllocatorWithCleanup<unsigned int, true>::reallocate(unsigned int*, unsigned int, unsigned int, bool) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->04.24% (1,680B) 0x42EB7EA: CryptoPP::Integer::operator=(CryptoPP::Integer const&) (in /usr/lib/libcrypto++.so.7.0.0)
+|   ->04.24% (1,680B) in 58 places, all below massif's threshold (01.00%)
+|     
+->01.78% (704B) 0x45CCACD: (within /lib/tls/i686/cmov/libc-2.9.so)
+| ->01.78% (704B) 0x45CF51A: fopen64 (in /lib/tls/i686/cmov/libc-2.9.so)
+|   ->01.78% (704B) 0x4501605: std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int) (in /usr/lib/libstdc++.so.6.0.10)
+|     ->01.78% (704B) 0x44AA08C: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|       ->01.78% (704B) 0x44AA181: std::basic_fstream<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.10)
+|         ->01.78% (704B) in 2 places, all below massif's threshold (01.00%)
+|           
+->01.62% (644B) 0x4245752: CryptoPP::value_ptr<CryptoPP::ECP>::operator=(CryptoPP::value_ptr<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+| ->01.62% (644B) in 3 places, all below massif's threshold (01.00%)
+|   
+->01.44% (572B) 0x8058DB4: __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned int, void const*) (in /home/bhavna/Desktop/project/progs 2/ecies)
+| ->01.44% (572B) 0x8058DDE: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned int) (in /home/bhavna/Desktop/project/progs 2/ecies)
+|   ->01.44% (572B) in 2 places, all below massif's threshold (01.00%)
+|     
+->01.21% (480B) 0x42F691B: CryptoPP::MontgomeryRepresentation::Clone() const (in /usr/lib/libcrypto++.so.7.0.0)
+  ->01.21% (480B) 0x42848BE: CryptoPP::ECP::ECP(CryptoPP::ECP const&, bool) (in /usr/lib/libcrypto++.so.7.0.0)
+    ->01.21% (480B) 0x424576D: CryptoPP::value_ptr<CryptoPP::ECP>::operator=(CryptoPP::value_ptr<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+      ->01.21% (480B) 0x42653D0: CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP>::operator=(CryptoPP::DL_GroupParameters_EC<CryptoPP::ECP> const&) (in /usr/lib/libcrypto++.so.7.0.0)
+        ->01.21% (480B) in 3 places, all below massif's threshold (01.00%)
+          
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 41    559,929,942           44,184           38,889         5,295            0
+ 42    578,299,519           44,632           39,401         5,231            0
+ 43    592,094,856           47,120           42,066         5,054            0
+ 44    610,802,372           40,224           35,921         4,303            0
+ 45    629,222,886           45,040           39,721         5,319            0
+ 46    647,628,572           49,176           43,250         5,926            0
+ 47    661,417,420           39,904           36,089         3,815            0
+ 48    679,746,353           39,072           35,273         3,799            0
+ 49    693,527,849           40,816           36,850         3,966            0
+ 50    701,735,453           49,168           43,242         5,926            0

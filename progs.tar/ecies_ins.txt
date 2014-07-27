@@ -1,0 +1,115 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.4849' (creator: callgrind-3.4.1-Debian)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+L2 cache: 
+Timerange: Basic block 0 - 68813390
+Trigger: Program termination
+Profiled target:  ./ecies (PID 4849, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+         Ir 
+--------------------------------------------------------------------------------
+747,138,248  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+         Ir  file:function
+--------------------------------------------------------------------------------
+114,563,750  ???:CryptoPP::Baseline_MultiplyTop8(unsigned int*, unsigned int const*, unsigned int const*, unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+ 80,774,632  ???:CryptoPP::Baseline_Sub(unsigned int, unsigned int*, unsigned int const*, unsigned int const*) [/usr/lib/libcrypto++.so.7.0.0]
+ 76,251,889  ???:CryptoPP::Baseline_Multiply8(unsigned int*, unsigned int const*, unsigned int const*) [/usr/lib/libcrypto++.so.7.0.0]
+ 74,075,596  ???:CryptoPP::AlmostInverse(unsigned int*, unsigned int*, unsigned int const*, unsigned int, unsigned int const*, unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+ 68,607,320  ???:CryptoPP::Baseline_MultiplyBottom8(unsigned int*, unsigned int const*, unsigned int const*) [/usr/lib/libcrypto++.so.7.0.0]
+ 63,574,007  ???:CryptoPP::Baseline_Add(unsigned int, unsigned int*, unsigned int const*, unsigned int const*) [/usr/lib/libcrypto++.so.7.0.0]
+ 42,564,935  ???:CryptoPP::Baseline_Square8(unsigned int*, unsigned int const*) [/usr/lib/libcrypto++.so.7.0.0]
+ 17,604,171  ???:0x00071b40 [/lib/tls/i686/cmov/libc-2.9.so]
+ 17,421,127  ???:memcpy [/lib/tls/i686/cmov/libc-2.9.so]
+ 15,940,234  ???:CryptoPP::MultiplyByPower2Mod(unsigned int*, unsigned int const*, unsigned int, unsigned int const*, unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+ 12,689,595  ???:0x00070d60 [/lib/tls/i686/cmov/libc-2.9.so]
+ 10,514,195  ???:0x000090d0 [/lib/ld-2.9.so]
+ 10,338,029  ???:CryptoPP::Integer::operator=(CryptoPP::Integer const&) [/usr/lib/libcrypto++.so.7.0.0]
+  9,034,170  ???:CryptoPP::MontgomeryReduce(unsigned int*, unsigned int*, unsigned int*, unsigned int const*, unsigned int const*, unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+  8,319,547  ???:0x0006fde0 [/lib/tls/i686/cmov/libc-2.9.so]
+  8,244,917  ???:0x00072cf0 [/lib/tls/i686/cmov/libc-2.9.so]
+  6,555,475  ???:CryptoPP::Integer::WordCount() const [/usr/lib/libcrypto++.so.7.0.0]
+  5,684,760  ???:free [/lib/tls/i686/cmov/libc-2.9.so]
+  4,649,205  ???:memalign [/lib/tls/i686/cmov/libc-2.9.so]
+  4,388,720  ???:CryptoPP::MontgomeryRepresentation::Multiply(CryptoPP::Integer const&, CryptoPP::Integer const&) const [/usr/lib/libcrypto++.so.7.0.0]
+  4,291,196  ???:CryptoPP::ModularArithmetic::Add(CryptoPP::Integer const&, CryptoPP::Integer const&) const [/usr/lib/libcrypto++.so.7.0.0]
+  4,185,280  ???:0x0000a4e0 [/lib/ld-2.9.so]
+  4,163,066  ???:CryptoPP::Integer::Integer(CryptoPP::Integer const&) [/usr/lib/libcrypto++.so.7.0.0]
+  3,801,436  ???:CryptoPP::MultiplyTop(unsigned int*, unsigned int*, unsigned int const*, unsigned int const*, unsigned int const*, unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+  3,675,562  ???:memset [/lib/tls/i686/cmov/libc-2.9.so]
+  3,503,858  ???:0x001d3807 [/usr/lib/libcrypto++.so.7.0.0]
+  3,412,188  ???:CryptoPP::RecursiveMultiplyBottom(unsigned int*, unsigned int*, unsigned int const*, unsigned int const*, unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+  3,071,157  ???:CryptoPP::Divide(unsigned int*, unsigned int*, unsigned int*, unsigned int const*, unsigned int, unsigned int const*, unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+  3,068,976  ???:CryptoPP::MontgomeryRepresentation::Square(CryptoPP::Integer const&) const [/usr/lib/libcrypto++.so.7.0.0]
+  2,925,945  ???:CryptoPP::AllocatorWithCleanup<unsigned int, true>::deallocate(void*, unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+  2,909,799  ???:0x00008d10 [/lib/ld-2.9.so]
+  2,873,388  ???:CryptoPP::Singleton<std::vector<unsigned short, std::allocator<unsigned short> >, CryptoPP::NewPrimeTable, 0>::Ref() const [/usr/lib/libcrypto++.so.7.0.0]
+  2,641,532  ???:CryptoPP::AllocatorWithCleanup<unsigned int, true>::allocate(unsigned int, void const*) [/usr/lib/libcrypto++.so.7.0.0]
+  2,567,868  ???:CryptoPP::Integer::~Integer() [/usr/lib/libcrypto++.so.7.0.0]
+  2,486,377  ???:CryptoPP::AsymmetricMultiply(unsigned int*, unsigned int*, unsigned int const*, unsigned int, unsigned int const*, unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+  2,345,873  ???:CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const [/usr/lib/libcrypto++.so.7.0.0]
+  2,246,007  ???:malloc [/lib/ld-2.9.so]
+  2,006,794  ???:__umoddi3 [/lib/libgcc_s.so.1]
+  1,796,525  ???:CryptoPP::RecursiveMultiply(unsigned int*, unsigned int*, unsigned int const*, unsigned int const*, unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+  1,752,004  ???:CryptoPP::Integer::Modulo(unsigned int) const [/usr/lib/libcrypto++.so.7.0.0]
+  1,699,627  ???:CryptoPP::ModularArithmetic::Reduce(CryptoPP::Integer&, CryptoPP::Integer const&) const [/usr/lib/libcrypto++.so.7.0.0]
+  1,547,826  ???:CryptoPP::DivideByPower2Mod(unsigned int*, unsigned int const*, unsigned int, unsigned int const*, unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+  1,497,846  ???:CryptoPP::SecBlock<unsigned int, CryptoPP::AllocatorWithCleanup<unsigned int, true> >::~SecBlock() [/home/bhavna/Desktop/project/progs 2/ecies]
+  1,482,975  ???:CryptoPP::Integer::PositiveCompare(CryptoPP::Integer const&) const [/usr/lib/libcrypto++.so.7.0.0]
+  1,402,180  ???:0x000165af [/lib/tls/i686/cmov/libc-2.9.so]
+  1,386,141  ???:CryptoPP::RecursiveSquare(unsigned int*, unsigned int*, unsigned int const*, unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+  1,267,645  ???:CryptoPP::ECP::SimultaneousMultiply(CryptoPP::ECPPoint*, CryptoPP::ECPPoint const&, CryptoPP::Integer const*, unsigned int) const'2 [/usr/lib/libcrypto++.so.7.0.0]
+  1,071,404  ???:CryptoPP::InitializeInteger::InitializeInteger() [/usr/lib/libcrypto++.so.7.0.0]
+  1,069,930  ???:CryptoPP::ASN1Object::~ASN1Object() [/home/bhavna/Desktop/project/progs 2/ecies]
+  1,057,398  ???:CryptoPP::PositiveDivide(CryptoPP::Integer&, CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&) [/usr/lib/libcrypto++.so.7.0.0]
+  1,026,038  ???:CryptoPP::AllocatorWithCleanup<unsigned int, true>::reallocate(unsigned int*, unsigned int, unsigned int, bool) [/usr/lib/libcrypto++.so.7.0.0]
+  1,007,860  ???:CryptoPP::SHA1::Transform(unsigned int*, unsigned int const*) [/usr/lib/libcrypto++.so.7.0.0]
+    817,634  ???:void std::__adjust_heap<__gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >, int, CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> >(__gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >, int, int, CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>) [/usr/lib/libcrypto++.so.7.0.0]
+    780,302  ???:CryptoPP::ModularArithmetic::Subtract(CryptoPP::Integer const&, CryptoPP::Integer const&) const [/usr/lib/libcrypto++.so.7.0.0]
+    635,370  ???:unsigned int CryptoPP::BitPrecision<unsigned int>(unsigned int const&) [/usr/lib/libcrypto++.so.7.0.0]
+    630,580  ???:CryptoPP::Integer::Compare(CryptoPP::Integer const&) const [/usr/lib/libcrypto++.so.7.0.0]
+    587,392  ???:0x00008b40 [/lib/ld-2.9.so]
+    562,600  ???:CryptoPP::ECPPoint::ECPPoint(CryptoPP::ECPPoint const&) [/home/bhavna/Desktop/project/progs 2/ecies]
+    531,522  ???:void std::__push_heap<__gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >, int, CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> >(__gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >, int, int, CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>) [/usr/lib/libcrypto++.so.7.0.0]
+    464,022  ???:CryptoPP::Integer::GetBit(unsigned int) const [/usr/lib/libcrypto++.so.7.0.0]
+    440,240  ???:CryptoPP::ECPPoint::~ECPPoint() [/home/bhavna/Desktop/project/progs 2/ecies]
+    419,383  ???:CryptoPP::ECP::Add(CryptoPP::ECPPoint const&, CryptoPP::ECPPoint const&) const [/usr/lib/libcrypto++.so.7.0.0]
+    374,778  ???:CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>::~BaseAndExponent() [/usr/lib/libcrypto++.so.7.0.0]
+    370,239  ???:0x000167d0 [/lib/ld-2.9.so]
+    366,899  ???:unsigned int CryptoPP::DivideThreeWordsByTwo<unsigned int, CryptoPP::DWord>(unsigned int*, unsigned int, unsigned int, CryptoPP::DWord*) [/usr/lib/libcrypto++.so.7.0.0]
+    361,925  ???:CryptoPP::ModularArithmetic::Half(CryptoPP::Integer const&) const [/usr/lib/libcrypto++.so.7.0.0]
+    354,788  ???:CryptoPP::Integer::Integer() [/usr/lib/libcrypto++.so.7.0.0]
+    349,272  ???:CryptoPP::MontgomeryRepresentation::MultiplicativeInverse(CryptoPP::Integer const&) const [/usr/lib/libcrypto++.so.7.0.0]
+    332,010  ???:CryptoPP::Baseline_Multiply4(unsigned int*, unsigned int const*, unsigned int const*) [/usr/lib/libcrypto++.so.7.0.0]
+    327,144  ???:CryptoPP::Integer::operator>>=(unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+    323,232  ???:CryptoPP::AbstractGroup<CryptoPP::Integer>::SimultaneousMultiply(CryptoPP::Integer*, CryptoPP::Integer const&, CryptoPP::Integer const*, unsigned int) const [/usr/lib/libcrypto++.so.7.0.0]
+    291,136  ???:CryptoPP::ArraySink::Put2(unsigned char const*, unsigned int, int, bool) [/usr/lib/libcrypto++.so.7.0.0]
+    283,008  ???:CryptoPP::ModularArithmetic::Double(CryptoPP::Integer const&) const [/usr/lib/libcrypto++.so.7.0.0]
+    239,230  ???:CryptoPP::StringStore::CopyRangeTo2(CryptoPP::BufferedTransformation&, unsigned long long&, unsigned long long, std::string const&, bool) const [/usr/lib/libcrypto++.so.7.0.0]
+    237,380  ???:CryptoPP::Rijndael::Enc::ProcessAndXorBlock(unsigned char const*, unsigned char const*, unsigned char*) const [/usr/lib/libcrypto++.so.7.0.0]
+    231,221  ???:CryptoPP::Baseline_Multiply2(unsigned int*, unsigned int const*, unsigned int const*) [/usr/lib/libcrypto++.so.7.0.0]
+    214,282  ???:0x001d5cb1 [/usr/lib/libcrypto++.so.7.0.0]
+    214,134  ???:std::basic_filebuf<char, std::char_traits<char> >::xsputn(char const*, int) [/usr/lib/libstdc++.so.6.0.10]
+    212,819  ???:CryptoPP::Integer::Divide(CryptoPP::Integer&, CryptoPP::Integer&, CryptoPP::Integer const&, CryptoPP::Integer const&) [/usr/lib/libcrypto++.so.7.0.0]
+    199,975  ???:CryptoPP::ECPPoint CryptoPP::GeneralCascadeMultiplication<CryptoPP::ECPPoint, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > > >(CryptoPP::AbstractGroup<CryptoPP::ECPPoint> const&, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >)'2 [/usr/lib/libcrypto++.so.7.0.0]
+    189,501  ???:CryptoPP::WindowSlider::FindNextWindow() [/usr/lib/libcrypto++.so.7.0.0]
+    180,474  ???:CryptoPP::Integer::operator!() const [/usr/lib/libcrypto++.so.7.0.0]
+    171,450  ???:CryptoPP::BufferedTransformation::Get(unsigned char*, unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+    170,848  ???:CryptoPP::AbstractEuclideanDomain<CryptoPP::Integer>::Gcd(CryptoPP::Integer const&, CryptoPP::Integer const&) const [/usr/lib/libcrypto++.so.7.0.0]
+    170,430  ???:std::ostream::write(char const*, int) [/usr/lib/libstdc++.so.6.0.10]
+    166,059  ???:std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, int) [/usr/lib/libstdc++.so.6.0.10]
+    165,455  ???:CryptoPP::ECPPoint CryptoPP::GeneralCascadeMultiplication<CryptoPP::ECPPoint, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > > >(CryptoPP::AbstractGroup<CryptoPP::ECPPoint> const&, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >, __gnu_cxx::__normal_iterator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>*, std::vector<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer>, std::allocator<CryptoPP::BaseAndExponent<CryptoPP::ECPPoint, CryptoPP::Integer> > > >) [/usr/lib/libcrypto++.so.7.0.0]
+    144,030  ???:CryptoPP::Integer::Modulo(CryptoPP::Integer const&) const [/usr/lib/libcrypto++.so.7.0.0]
+    140,532  ???:CryptoPP::TrialDivision(CryptoPP::Integer const&, unsigned int) [/usr/lib/libcrypto++.so.7.0.0]
+

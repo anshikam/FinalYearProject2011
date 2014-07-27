@@ -1,0 +1,498 @@
+
+*************************************************
+PLAIN TEXT: 
+ADBMS DATA MINING Assignment 4
+Data Description
+
+Title: Blood Transfusion Service Center Data Set
+
+Abstract: Data taken from the
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+`,mÙ
+…#a¹Éÿ§B¢.şÎÖÂ7‡?CŠğ¿ù©s
+Ò—K„½BœIƒò_hu0w6Û]Ã[Œ|™dyüã¤Y—]¬ÍâR¢ÊD¸ÄjPíkï÷!ŒåƒßË©í{#Ê9=Y
+ŠÌ»¶ûT –‰"ê2é÷¬WËxóÉ ¡~ª=W¨ÁîÀİ¥(“gaŒ*['¥[õyIæ•Aªÿ{cÍ®‘Ş'—Æ&`\²¦O‹?`m«È:ğÚP¤§lP
+------------------------------
+RECOVERED TEXT :
+ADBMS DATA MINING Assignment 4
+Data Description
+
+Title: Blood Transfusion Service Center Data Set
+
+Abstract: Data taken from the
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+ Blood Transfusion Service Center in Hsin-Chu City 
+in Taiwan -- this is a classification problem.
+	
+Data Set Characteristics: M
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+·út8/göM¿È'£œHUn)Ú)Šˆ:YÙ=Ô,ôšKc˜¿°»¶i$¥bø¤7½Lş2ÚÍXHÙòH.Ä3ê&Ê6Ì¥{ûæwo­uVE¸o¦‡™9N.ñï’‚Úóà}ÃªÖ¾!€+	5¿Cˆ|±‡ÿŒ£nNBÈJñ)ĞTôœuy§QÁxcŒè÷xìäšDÁ¼ËúpÌœÁ^%Xô6á
+ÒZN>Ø´É|ÂeslP
+------------------------------
+RECOVERED TEXT :
+ Blood Transfusion Service Center in Hsin-Chu City 
+in Taiwan -- this is a classification problem.
+	
+Data Set Characteristics: M
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+ultivariate
+Number of Instances: 748
+Area: Business
+Attribute Characteristics: Real
+Number of Attributes: 5
+Date Donated: 2008-1
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+úÀÙ¨SC+œX&XÀ»[šCÕ
+hu»Öç©4wÅÊÁ<”şğeò’B}ß3vÒWÎ©ÇÆ]
+–ánS,û#:Ñ“ZĞq¦í`˜©ˆt€CÊš‘
+èañÊˆ¢(6¦>Áç=Àüı´[
+------------------------------
+RECOVERED TEXT :
+ultivariate
+Number of Instances: 748
+Area: Business
+Attribute Characteristics: Real
+Number of Attributes: 5
+Date Donated: 2008-1
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+0-03
+Associated Tasks: Classification
+Missing Values? N/A
+
+Source:
+
+Original Owner and Donor
+Prof. I-Cheng Yeh
+Department of Inf
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+1·¡±ÆZ4¶9ÓO}Å˜%•¿„Á°%Ú!j–ØâwİÕ¨]¦œè—ø˜ i
+------------------------------
+RECOVERED TEXT :
+0-03
+Associated Tasks: Classification
+Missing Values? N/A
+
+Source:
+
+Original Owner and Donor
+Prof. I-Cheng Yeh
+Department of Inf
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+ormation Management
+Chung-Hua University,
+Hsin Chu, Taiwan 30067, R.O.C.
+e-mail:icyeh 'at' chu.edu.tw
+TEL:886-3-5186511
+
+Date Do
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+ŞQù57°}äİVEK€aÄğÅ‘5µŠ‹_q™ Ó¤½ŒV[bˆ˜>WIÒ!ìiL_i~[zvûÎÉIo_ÙX3kk;°ğˆÆïUÜZ¬ä®ğVD²Í1Å\¢Ü)!Î2…Ø8I»0q#W¯–•%ŒHøä]a²ì]ç¼s¹Q„«tê„yiÅŒñ‰K³€ÉOûªy·
+ŠòD€½ß)S1¹ÛÙˆ%ïÇ-ó3"6EîhÆ>{
+------------------------------
+RECOVERED TEXT :
+ormation Management
+Chung-Hua University,
+Hsin Chu, Taiwan 30067, R.O.C.
+e-mail:icyeh 'at' chu.edu.tw
+TEL:886-3-5186511
+
+Date Do
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+nated: October 3, 2008 
+
+Data Set Information:
+
+To demonstrate the RFMTC marketing model (a modified version of RFM), this study
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+˜1Ş5kNô¾>¯’6éw8v†ädÄ
+------------------------------
+RECOVERED TEXT :
+nated: October 3, 2008 
+
+Data Set Information:
+
+To demonstrate the RFMTC marketing model (a modified version of RFM), this study
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+ 
+adopted the donor database of Blood Transfusion Service Center in Hsin-Chu City 
+in Taiwan. The center passes their blood tran
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+¾x°şä8‰ÍE´S†:Ş‘¹§{Ä0­°ñ~gÇ©İƒ¨¹—ÿìrfã\öÜËå)ÿMu>aaSxÅài2&wö¼íÆ:Ú˜÷¯Môüv~Õ’7q‚–±˜Â™~ísÎ;WŸ°|ğ0Ë¦5².İ›<ğœî!/ >M©„'ÚºFÕ×®tzf3M¤”§ë„86n¥ë¿;%´…Ó—8ãêµà”à`) u£K,¥
+Q=vı
+------------------------------
+RECOVERED TEXT :
+ 
+adopted the donor database of Blood Transfusion Service Center in Hsin-Chu City 
+in Taiwan. The center passes their blood tran
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+sfusion service bus to one 
+university in Hsin-Chu City to gather blood donated about every three months. To 
+build a FRMTC mode
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+•xÚº›|×ÿ­~*\»OA«˜L§*ÒcÿXÛ1xeg{:}»‡m÷ëÑĞ8al$(ğ6½N‡İAŸ®pF,»ím$é×*Ô¹$1ÑË	m9¿áÎ F¯,[O‹âø´&Ş¢›Ó[½‰ã¬GôN ´ñ?7h÷ùı
+0¨m¡~“U•gã"?ç‚ËÔ¼¬İîffŠ˜V3Ú^öù|£Ãø›ºÅaÜÅ
+------------------------------
+RECOVERED TEXT :
+sfusion service bus to one 
+university in Hsin-Chu City to gather blood donated about every three months. To 
+build a FRMTC mode
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+l, we selected 748 donors at random from the donor database. 
+These 748 donor data, each one included R (Recency - months since 
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+]”=t]Vhº§çIca4937I7o¼8æÑ‘‚ñ<§j5AÈú°÷NÓ¨ƒì‘TH‹„¥Û@ÁˆŸëì+slZ¬®šËä ÔX3òñdRB;DŞîm¤l'‹»,ñİš¸v!2@›DÎDC^sjáU¾Ük°ú6G]¾7ç/õğe¼ç¹¤ZhKwÕ
+T)=¥+«GJ…DãF¢)uÅËÆÕK` È½ûäá’Û£dxîp ÓNCU
+------------------------------
+RECOVERED TEXT :
+l, we selected 748 donors at random from the donor database. 
+These 748 donor data, each one included R (Recency - months since 
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+last 
+donation), F (Frequency - total number of donation), M (Monetary - total blood 
+donated in c.c.), T (Time - months since f
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+Ç'©FGœÜ8—6³-qİˆ”íÏ_?!x¸Ëí>CëY¦Ó§ñ)YcëÃ'²¿j¡-á8Äîe®ò.ƒTùQØ1Q)8×’”i¯Z3,ÿŸŞ˜Ü3LD„UoSj³ß¤8ú(Š7a«-
+*Ğèw|³„uŒæÿC–rÔòD§• Zà—31¸0¸‹®^ñY²Ç“”cG1/GÏÃ",u€·õP£A.Å»ıä*ø‰“ó‰ùNêÖ¿j)uÅËÆÕ)
+------------------------------
+RECOVERED TEXT :
+last 
+donation), F (Frequency - total number of donation), M (Monetary - total blood 
+donated in c.c.), T (Time - months since f
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+irst donation), and a binary variable 
+representing whether he/she donated blood in March 2007 (1 stand for donating 
+blood; 0 s
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+û‹Kv:
+ùµö­@a'Fÿ)Û¶dä°A¸'XVËnö&WĞ
+i‰6$|ı²ÂmC¹…¨ÓÎ¡É‰[7—ŸN44¼ßë’ö”éèQudÆîÑÆ›G œD%§&€Ú‘±óùå†yº>B±ú5]Áô“æ![•i‡ª•TQƒWä« ğK >ı®Ob‚iãf¼Óm8¬¯ŠƒÔ·9áJ~?ÌÃü|Ğ‘+…8sP üEQ]èÕê’FeŞ{Uì)uÈ
+------------------------------
+RECOVERED TEXT :
+irst donation), and a binary variable 
+representing whether he/she donated blood in March 2007 (1 stand for donating 
+blood; 0 s
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+tands for not donating blood).
+
+Attribute Information:
+
+Given is the variable name, variable type, the measurement unit and a br
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+6D4áÿÃğ!·×…<Û$CÖI‚[Sæ`èª˜.æ.'·^ÙG•Loı–’ß¶–ãæ“©¯OGxı	¬feHXŞ1»‘uke:‹ÓÎW:©ìNa+³¦ŞşĞÀ^•V$•}î¤`"SM	÷k½xA1CÍ¤Ö¢L6_Z5ƒPĞésÆÍ_ :§BJ£*ÛnÓ3?Iv%E^6ÔrM¥¥µ´x‘à¤Ó1ÔE9
+------------------------------
+RECOVERED TEXT :
+tands for not donating blood).
+
+Attribute Information:
+
+Given is the variable name, variable type, the measurement unit and a br
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+ief 
+description. The "Blood Transfusion Service Center" is a classification problem. 
+The order of this listing corresponds to 
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+DŞñmÁ ‚ü¹™Q\Óû¸dâÕ¥I^<ñI¡Ìü(&EİìÇ.ğÆê µôoG ‹w>æè“÷%ÄŠ4ìë6å£ùìË ¤*áõ>ïSù%¦I*®º²7É>	$<AHÂ
+zqX —Ÿ&ËnÊò Êö	oZ@_=7'¤½6kjiCü7YuşÕÜTjò‡zÌ;n±Â(;:»ŞªÊ|‚` >^×Rà¼OcÍ¯…G¡lQ!…•m(
+------------------------------
+RECOVERED TEXT :
+ief 
+description. The "Blood Transfusion Service Center" is a classification problem. 
+The order of this listing corresponds to 
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+the order of numerals along the rows of 
+the database.
+
+R (Recency - months since last donation),
+F (Frequency - total number of
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+c´ÒêL.!†¨h™Y‘$Ú„g:Ã	%wC8,ê3‹3Æ(?:Pı(3)û»—GŠÎ›W³È]øÓ«ˆğñ|Éä½ô
+------------------------------
+RECOVERED TEXT :
+the order of numerals along the rows of 
+the database.
+
+R (Recency - months since last donation),
+F (Frequency - total number of
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+ donation),
+M (Monetary - total blood donated in c.c.),
+T (Time - months since first donation), and
+a binary variable representi
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+ãÑÂğ‹ºg`İì»ëULQY>BL¯
+“İ
+g 	Âu kbuMNĞ!XÖbƒ›ôŠçÎE	"~qq|8¢ü
+------------------------------
+RECOVERED TEXT :
+ donation),
+M (Monetary - total blood donated in c.c.),
+T (Time - months since first donation), and
+a binary variable representi
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+ng whether he/she donated blood in March 2007 (1 
+stand for donating blood; 0 stands for not donating blood).
+
+
+Table 1 shows th
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+œÓàÃ”ÉşËÁ˜İrêMí€!ğ¼ı³¥@_=z€Íñ÷¹­—[Òz¥Á}©¹ÒË""}ŒÁ0,§¦)±XGš±Áêsø(o½SKoùˆyõdÔÕ1{$WßF±Š„CYyT
+F+<«~~É„vïèÎen,3c÷oôÎÉƒ“d†hZñyÊwyl3ÿ~ ¨Rô¼|Àéº6Fë^óàJD<:XR\úŸãmÈ
+------------------------------
+RECOVERED TEXT :
+ng whether he/she donated blood in March 2007 (1 
+stand for donating blood; 0 stands for not donating blood).
+
+
+Table 1 shows th
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+e descriptive statistics of the data. We selected 500 data at 
+random as the training set, and the rest 248 as the testing set.
+
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+#ËMå¨Gğ&Ü_³†“¬Ñv—ˆ½°ğNY5„§„U7­=»ĞëN–úç•3Ö—>c{ñœšËt5	Ë+DŞ"åü±ärLQú3¹qÃhqÈ‡7ı¤ál«Â†íÈŒ”ÛoÑ…©×
+.Xb5â†
+—Eëtöëè†¦¬L{`J¾–-„¦ì‚^UÑ/8ø;î6…Õ;j~€Óˆ~¶‡¡(8o¼˜â°7«ºOir>H'ç§'Ö6´vx…ÿBmÈ
+------------------------------
+RECOVERED TEXT :
+e descriptive statistics of the data. We selected 500 data at 
+random as the training set, and the rest 248 as the testing set.
+
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+
+Table 1. Descriptive statistics of the data
+
+Variable Data Type Measurement Description min max mean std
+Recency quantitative M
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+gcL=‘qSÊèÙé¶Û%kŠ¯\g¯IU9Â8UÃü V8á†âpúÕË÷°íÿD¼/¸àÙµŠ°¨„ñ5ÜZ6ëİÂÚŠN]@óÿÅÕ) 5,2‹Fv¢o?˜7«­ÇàV¬’!İFêÉ¢ï'Dmn›ğÓÈ`­ö.ïÛvhÒ¥TS KR½
+------------------------------
+RECOVERED TEXT :
+
+Table 1. Descriptive statistics of the data
+
+Variable Data Type Measurement Description min max mean std
+Recency quantitative M
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+onths Input 0.03 74.4 9.74 8.07
+Frequency quantitative Times Input 1 50 5.51 5.84
+Monetary quantitative c.c. blood Input 250 125
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+¯} #{»²‚Xa¨ÔÚhMÇ±{Ûæm·LgÎBğ9/ùù²ß>¿´r¢ñ¬9™15S®(Á´h ¯CjFU[“ £?!ìŞLäõŒ‰†‚r¼/×™éh>b]8ó¤n
+*lˆÀ†|_#} ë/aAØ€$B/¾<[«:é@a*b£û7f‚{s{éD;
+ğ…ôC<])Y¨û-m5âQK¸¹Â«ÏŞöLù :1;ò,kJK
+------------------------------
+RECOVERED TEXT :
+onths Input 0.03 74.4 9.74 8.07
+Frequency quantitative Times Input 1 50 5.51 5.84
+Monetary quantitative c.c. blood Input 250 125
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+00 1378.68 1459.83
+Time quantitative Months Input 2.27 98.3 34.42 24.32
+Whether he/she donated blood in March 2007 binary 1=yes 
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+å	4Pûç±€ZçÕó¬†û²”B´W2SDâ×!«~Q
+------------------------------
+RECOVERED TEXT :
+00 1378.68 1459.83
+Time quantitative Months Input 2.27 98.3 34.42 24.32
+Whether he/she donated blood in March 2007 binary 1=yes 
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+0=no Output 0 1 1 (24%) 0 (76%)
+
+Citation Request:
+
+NOTE: Reuse of this database is unlimited with retention of copyright notice
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+óQ÷i0ey‹÷ØA€l)Æ’§é°{<}Èàd›øs¢ÁIùl@VbÜÀR«
+ÿï9]A¹í…†ÉwUşğM“W[9(ê
+7±ştó¨\ÃAëÜx6™ÊfÓÖ!q(«Ö	éÄ@õ©*5Å¿vXÿ¦èb9@Ccf®µQRˆ;õ¿-QÚd	»œèµ•¬R¬„¤[éçœÓ‹TS&“dÂªV¸2’=½y»
+áLÆ
+------------------------------
+RECOVERED TEXT :
+0=no Output 0 1 1 (24%) 0 (76%)
+
+Citation Request:
+
+NOTE: Reuse of this database is unlimited with retention of copyright notice
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+ for 
+Prof. I-Cheng Yeh and the following published paper:
+
+Yeh, I-Cheng, Yang, King-Jang, and Ting, Tao-Ming, "Knowledge discov
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+µ|Cj‹>
+------------------------------
+RECOVERED TEXT :
+ for 
+Prof. I-Cheng Yeh and the following published paper:
+
+Yeh, I-Cheng, Yang, King-Jang, and Ting, Tao-Ming, "Knowledge discov
+RECOVERED TEXT LENGTH IS: 129
+
+*************************************************
+PLAIN TEXT: 
+ery on RFM 
+model using Bernoulli sequence, "Expert Systems with Applications, 2008 
+(doi:10.1016/j.eswa.2008.07.018).
+
+
+
+
+
+
+
+
+
+
+PLAIN TEXT LENGTH IS: 129 (including the trailing NULL)
+CIPHER TEXT LENGTH IS: 190
+
+------------------------------
+¿­J‡ªXÇ¤
+@[àÆ«q:úÁşŸÑ»2äG:D…&¥f'+4©âj”`º6JŠå0¨n¦WX»Ô%À³h„œıö¥Ga§ˆ.k…b
+äğú±êôn-§Ü¦O%”^ö+Æ›x,İ5§(ˆåM¹ƒ/Ñº ÄŞ•”Ÿö}Ã–­%˜w/_ûø$yqÁB©_ZüJ“ÙÃ³H"rüFÒÓF'Mè÷ÊPGI)8¸#‡v
+------------------------------
+RECOVERED TEXT :
+ery on RFM 
+model using Bernoulli sequence, "Expert Systems with Applications, 2008 
+(doi:10.1016/j.eswa.2008.07.018).
+
+
+
+
+
+
+
+
+
+
+RECOVERED TEXT LENGTH IS: 129
